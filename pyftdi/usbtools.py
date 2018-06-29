@@ -23,6 +23,7 @@ from string import printable as printablechars
 from sys import platform, stdout
 from urllib.parse import urlsplit
 from .misc import to_int
+from __future__ import print_function
 
 __all__ = ['UsbTools']
 
