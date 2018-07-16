@@ -23,7 +23,10 @@ import usb.core
 import usb.util
 from string import printable as printablechars
 from sys import platform, stdout
-from urllib.parse import urlsplit
+try:
+    from urllib.parse import urlsplit
+except ImportError:
+     from urlparse import urlsplit
 from .misc import to_int
 
 __all__ = ['UsbTools']
